@@ -14,6 +14,12 @@
 @end
 
 @implementation DetailViewController
+//view may load before item gets set.
+-(void)setTaskObject:(ToDo *)taskObject{
+        _taskObject = taskObject;
+    [self configureView];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,9 +34,11 @@
     NSString *priorityNumber = [NSString stringWithFormat:@"%i",self.taskObject.priority];
     self.priorityLabel.text = priorityNumber;
     
-    NSString * completedBool = [NSString stringWithFormat:@"%d",self.taskObject.isCompleted];
-    self.completeLabel.text = completedBool;
-    
+    if (self.taskObject.isCompleted){
+        self.completeLabel.text = @"Done";
+    } else {
+        self.completeLabel.text = @"UNFINISHED";
+    }
 }
 
 
