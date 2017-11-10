@@ -7,13 +7,20 @@
 //
 
 #import "AddTaskViewController.h"
+#import "ToDo.h"
+
+@protocol saveTaskDelegate
+
+-(void)addTask:(ToDo*)task;
+
+@end
 
 @interface AddTaskViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) id<saveTaskDelegate> addDelegate;
 
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *descriptionTextField;
 @property (weak, nonatomic) IBOutlet UITextField *priorityTextField;
-
 @property (weak, nonatomic) IBOutlet UITextField *isCompleteTextField;
 
 
@@ -32,7 +39,9 @@
 
 - (IBAction)saveButtonTapped:(UIButton *)sender {
     
+    ToDo *newTask =[[ToDo alloc]initWith:self.nameTextField.text description:self.descriptionTextField.text priority:3 complete:self.isCompleteTextField.text];
     
+    [self.addDelegate addTask:newTask];
     
 }
 
