@@ -65,6 +65,7 @@
     if ([segue.identifier isEqualToString:@"detailSegue"]){
         DetailViewController *detail = [segue destinationViewController];
         
+        detail.taskObject = self.tasks[self.tableView.indexPathForSelectedRow.row];
     }
         
 }
