@@ -9,20 +9,14 @@
 #import "AddTaskViewController.h"
 #import "ToDo.h"
 
-@protocol saveTaskDelegate
 
--(void)addTask:(ToDo*)task;
-
-@end
 
 @interface AddTaskViewController ()
-@property (weak, nonatomic) id<saveTaskDelegate> addDelegate;
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *descriptionTextField;
 @property (weak, nonatomic) IBOutlet UITextField *priorityTextField;
 @property (weak, nonatomic) IBOutlet UITextField *isCompleteTextField;
-
 
 
 @end
@@ -43,6 +37,7 @@
     
     [self.addDelegate addTask:newTask];
     
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

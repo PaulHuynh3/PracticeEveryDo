@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "TaskTableViewCell.h"
 #import "ToDo.h"
+#import "AddTaskViewController.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource,saveTaskDelegate>
 @property NSMutableArray<ToDo *> *tasks;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -54,7 +55,18 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
+    if ([segue.identifier  isEqual: @"addIdentifier"]){
+        
+        AddTaskViewController *addTask = [segue destinationViewController];
+        addTask.addDelegate = self;
+    }
     
+    
+}
+
+-(void)addTask:(ToDo *)task{
+    [self.tasks addObject:task];
+    [self.tableView reloadData];
 }
 
 

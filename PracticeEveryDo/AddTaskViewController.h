@@ -7,8 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "ToDo.h"
 
+@protocol saveTaskDelegate
+
+-(void)addTask:(ToDo*)task;
+
+@end
 
 @interface AddTaskViewController : ViewController
+@property (weak, nonatomic) id<saveTaskDelegate> addDelegate;
+
+
 
 @end
