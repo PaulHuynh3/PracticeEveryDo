@@ -17,6 +17,7 @@
 		DAC83C931FB51AD200CDE491 /* ToDo.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC83C921FB51AD200CDE491 /* ToDo.m */; };
 		DAD3D4E31FB5477900A1B287 /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3D4E21FB5477900A1B287 /* TaskTableViewCell.m */; };
 		DAD3D4E61FB54FE900A1B287 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3D4E51FB54FE900A1B287 /* AddTaskViewController.m */; };
+		DAEF6B551FB6589A000BAE0D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEF6B541FB6589A000BAE0D /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		DAD3D4E21FB5477900A1B287 /* TaskTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewCell.m; sourceTree = "<group>"; };
 		DAD3D4E41FB54FE900A1B287 /* AddTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
 		DAD3D4E51FB54FE900A1B287 /* AddTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		DAEF6B531FB6589A000BAE0D /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DAEF6B541FB6589A000BAE0D /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				DAC83C7C1FB51A7E00CDE491 /* ViewController.m */,
 				DAD3D4E41FB54FE900A1B287 /* AddTaskViewController.h */,
 				DAD3D4E51FB54FE900A1B287 /* AddTaskViewController.m */,
+				DAEF6B531FB6589A000BAE0D /* DetailViewController.h */,
+				DAEF6B541FB6589A000BAE0D /* DetailViewController.m */,
 				DAD3D4E11FB5477900A1B287 /* TaskTableViewCell.h */,
 				DAD3D4E21FB5477900A1B287 /* TaskTableViewCell.m */,
 				DAC83C911FB51AD200CDE491 /* ToDo.h */,
@@ -163,6 +168,7 @@
 				DAD3D4E61FB54FE900A1B287 /* AddTaskViewController.m in Sources */,
 				DAC83C931FB51AD200CDE491 /* ToDo.m in Sources */,
 				DAC83C7D1FB51A7E00CDE491 /* ViewController.m in Sources */,
+				DAEF6B551FB6589A000BAE0D /* DetailViewController.m in Sources */,
 				DAD3D4E31FB5477900A1B287 /* TaskTableViewCell.m in Sources */,
 				DAC83C831FB51A7E00CDE491 /* PracticeEveryDo.xcdatamodeld in Sources */,
 				DAC83C8B1FB51A7E00CDE491 /* main.m in Sources */,

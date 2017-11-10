@@ -64,7 +64,7 @@
     
 }
 
--(void)addTask:(ToDo *)task{
+-(void)addTask:(ToDo *)task {
     [self.tasks addObject:task];
     [self.tableView reloadData];
 }
