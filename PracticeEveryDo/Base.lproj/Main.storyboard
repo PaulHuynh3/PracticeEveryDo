@@ -49,7 +49,7 @@
                                         <connections>
                                             <outlet property="taskName" destination="qkB-ce-9Mu" id="PVE-5A-KG9"/>
                                             <outlet property="taskPriority" destination="Bco-Xr-RPJ" id="1Gi-Le-STo"/>
-                                            <segue destination="v5a-ox-L6s" kind="show" id="aeY-k9-ikA"/>
+                                            <segue destination="v5a-ox-L6s" kind="show" identifier="detailSegue" id="aeY-k9-ikA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -86,14 +86,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h8-56-gfT">
-                                <rect key="frame" x="74" y="172" width="220" height="21"/>
+                                <rect key="frame" x="74" y="172" width="220" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYZ-6d-maT">
-                                <rect key="frame" x="85" y="270" width="220" height="21"/>
+                                <rect key="frame" x="85" y="270" width="220" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -117,6 +117,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="prf-aQ-wJs"/>
                     </view>
+                    <connections>
+                        <outlet property="completeLabel" destination="Kyr-lH-YR7" id="vIh-UO-E8p"/>
+                        <outlet property="descriptionLabel" destination="vYZ-6d-maT" id="vZr-Gl-0Fa"/>
+                        <outlet property="priorityLabel" destination="2Td-D9-768" id="MKN-GZ-4HK"/>
+                        <outlet property="taskNameLabel" destination="8h8-56-gfT" id="0Af-OP-BEA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9fm-6x-gLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

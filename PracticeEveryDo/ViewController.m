@@ -10,6 +10,7 @@
 #import "TaskTableViewCell.h"
 #import "ToDo.h"
 #import "AddTaskViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource,saveTaskDelegate>
 @property NSMutableArray<ToDo *> *tasks;
@@ -61,7 +62,11 @@
         addTask.addDelegate = self;
     }
     
-    
+    if ([segue.identifier isEqualToString:@"detailSegue"]){
+        DetailViewController *detail = [segue destinationViewController];
+        
+    }
+        
 }
 
 -(void)addTask:(ToDo *)task {

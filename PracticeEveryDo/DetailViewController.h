@@ -7,7 +7,20 @@
 //
 
 #import "ViewController.h"
+#import "ToDo.h"
 
 @interface DetailViewController : ViewController
+
+
+@property (weak, nonatomic) ToDo* taskObject;
+
+@property (weak, nonatomic) IBOutlet UILabel *taskNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *priorityLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *completeLabel;
+
 
 @end
